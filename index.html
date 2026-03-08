@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of a Computer Science student showcasing skills, projects, certifications, and contact details."
+    />
+    <title>Mahipal Singh Deora | Computer Science Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-theme="light">
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="#home">MS</a>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-resume" href="assets/resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false">
+            <span class="icon" aria-hidden="true">&#9728;</span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+          <a class="btn btn-ghost" href="assets/resume.pdf" download>Download Resume</a>
+        </div>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section hero reveal">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Science Student</p>
+            <h1>
+              Hi, I am <span class="accent">Mahipal Singh Deora</span>.<br />
+              I build <span class="typing" data-typing data-phrases="scalable apps|intelligent systems|clean interfaces"></span>
+            </h1>
+            <p class="intro">
+              I am a final-year Computer Science student focused on full-stack development, AI-powered solutions, and building products that feel effortless to use.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+              <a class="btn btn-outline" href="assets/resume.pdf" download>Download Resume</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <p class="meta-title">Location</p>
+                <p>India</p>
+              </div>
+              <div>
+                <p class="meta-title">Open To</p>
+                <p>Internships, Entry-level roles</p>
+              </div>
+              <div>
+                <p class="meta-title">Email</p>
+                <p>mmahipalsingh717@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img src="assets/profile.svg" alt="Portrait of Mahipal Singh Deora" />
+            <div class="status-card">
+              <span class="status-dot"></span>
+              <div>
+                <p class="status-title">Currently Learning</p>
+                <p>Machine learning, Deep learning,Agentic AI,GenAI, Data Science</p>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container split">
+          <div>
+            <h2>About Me</h2>
+            <p>
+              I am passionate about building software that blends performance, clarity, and real-world impact. My focus spans AI-driven products, scalable backend systems, and delightful user experiences.
+            </p>
+            <p>
+              I thrive in collaborative teams where I can contribute to architecture, rapid prototyping, and thoughtful problem solving. My goal is to grow into a software engineer who ships reliable systems and mentors others.
+            </p>
+            <div class="highlights">
+              <div class="highlight-card">
+                <h3>Strengths</h3>
+                <p>Problem solving, communication, rapid prototyping, UI/UX sensitivity.</p>
+              </div>
+              <div class="highlight-card">
+                <h3>Career Goal</h3>
+                <p>Build impactful products at scale while advancing in AI and distributed systems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-panel">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-year">2024 - 2028</span>
+                <div>
+                  <h4>B.Tech in Computer Science</h4>
+                  <h3>in AIML</h3>
+                  <p>At Parul University</p>
+                  <p class="muted">CGPA: 8.3 / 10</p>
+                </div>
+              </li>
+              <li>
+                <span class="timeline-year">2022 - 2024</span>
+                <div>
+                  <h4>Pre University (PCM)</h4>
+                  <p>At Vishwajyothi PU College</p>
+                  <p class="muted">Percentage: 93.5%</p>
+                </div>
+              </li>
+            </ul>
+            <div class="about-tags">
+              <span>AI & ML</span>
+              <span>Full-Stack</span>
+              <span>Cloud</span>
+              <span>Product Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <h2>Technical Skills</h2>
+            <p>Hands-on tools and technologies I use to bring ideas to life.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-title">
+                <span class="skill-icon">{ }</span>
+                <div>
+                  <h3>Programming Languages</h3>
+                  <p>C, Java, Python, JavaScript</p>
+                </div>
+              </div>
+              <div class="progress">
+                <span style="--level: 90%"></span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-title">
+                <span class="skill-icon">&lt;/&gt;</span>
+                <div>
+                  <h3>Web Development</h3>
+                  <p>HTML, CSS, React, Node.js</p>
+                </div>
+              </div>
+              <div class="progress">
+                <span style="--level: 88%"></span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-title">
+                <span class="skill-icon">DB</span>
+                <div>
+                  <h3>Databases</h3>
+                  <p>MySQL, MongoDB</p>
+                </div>
+              </div>
+              <div class="progress">
+                <span style="--level: 80%"></span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-title">
+                <span class="skill-icon">&#9881;</span>
+                <div>
+                  <h3>Tools</h3>
+                  <p>Git, GitHub, VS Code, Docker,Antigravity,</p>
+                </div>
+              </div>
+              <div class="progress">
+                <span style="--level: 85%"></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p>Selected work across AI, web platforms, and systems engineering.</p>
+          </div>
+          <div class="filters" id="project-filters"></div>
+          <div class="projects-grid" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <h2>Certifications</h2>
+            <p>Credentials that highlight my continuous learning.</p>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <img src="JavaScript.jpg" alt="Cloud Fundamentals Certificate" />
+              <div>
+                <h3>AWS Cloud Fundamentals</h3>
+                <p>Amazon Web Services</p>
+                <p class="muted">Issued: Jan 2025</p>
+                <button class="btn btn-ghost" type="button" data-preview="JavaScript.jpg" data-title="AWS Cloud Fundamentals">
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="cert-card">
+              <img src="Python.jpg" alt="Machine Learning Certificate" />
+              <div>
+                <h3>Machine Learning Specialization</h3>
+                <p>DeepLearning.AI</p>
+                <p class="muted">Issued: Aug 2024</p>
+                <button class="btn btn-ghost" type="button" data-preview="Python.jpg" data-title="Machine Learning Specialization">
+                  Preview
+                </button>
+              </div>
+            </article>
+            <article class="cert-card">
+              <img src="SQL.jpg" alt="Frontend Development Certificate" />
+              <div>
+                <h3>Responsive Web Development</h3>
+                <p>freeCodeCamp</p>
+                <p class="muted">Issued: Jun 2024</p>
+                <button class="btn btn-ghost" type="button" data-preview="SQL.jpg" data-title="Responsive Web Development">
+                  Preview
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="section reveal">
+        <div class="container connect">
+          <div>
+            <h2>Connect With Me</h2>
+            <p>Follow my work, collaborations, and experiments.</p>
+          </div>
+          <div class="social-grid">
+            <a class="social-card" href="https://github.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2c-5.5 0-10 4.5-10 10 0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1-.9-1.3-.9-1.3-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.9.9 2.4.7.1-.5.3-.9.5-1.1-2.2-.2-4.5-1.1-4.5-5.1 0-1.1.4-2 1-2.7-.1-.2-.4-1.3.1-2.7 0 0 .9-.3 2.8 1 .8-.2 1.7-.4 2.6-.4s1.8.1 2.6.4c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7.6.7 1 1.6 1 2.7 0 4-2.3 4.9-4.6 5.1.3.3.6.8.6 1.7v2.5c0 .3.2.6.7.5 4-1.3 6.9-5 6.9-9.4 0-5.5-4.5-10-10-10Z" />
+                </svg>
+              </span>
+              <div>
+                <h3>GitHub</h3>
+                <p>@mp_singh_mandawariya</p>
+              </div>
+            </a>
+            <a class="social-card" href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="4" />
+                  <path d="M7 9v8" />
+                  <path d="M7 7h.01" />
+                  <path d="M11 17v-5a2 2 0 0 1 4 0v5" />
+                </svg>
+              </span>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>/in/mahipal_singh_deora</p>
+              </div>
+            </a>
+            <a class="social-card" href="https://x.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4l16 16" />
+                  <path d="M20 4L4 20" />
+                </svg>
+              </span>
+              <div>
+                <h3>X / Twitter</h3>
+                <p>@mahipal_singh_deora</p>
+              </div>
+            </a>
+            <a class="social-card" href="https://instagram.com/" target="_blank" rel="noreferrer">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+              </span>
+              <div>
+                <h3>Instagram</h3>
+                <p>@mp_singh_mandawariya</p>
+              </div>
+            </a>
+            <a class="social-card" href="mailto:mmahipalsingh717@gmail.com">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </span>
+              <div>
+                <h3>Email</h3>
+                <p>mmahipalsingh717@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container split">
+          <div>
+            <h2>Contact Me</h2>
+            <p>
+              Have a question, idea, or opportunity? Send a message and I will get back within 24-48 hours.
+            </p>
+            <div class="contact-details">
+              <p><strong>Email:</strong> mmahipalsingh717@gmail.com</p>
+              <p><strong>Phone:</strong> +91 9686444115</p>
+              <p><strong>Location:</strong> India</p>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell me about your idea" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-status" id="form-status"></p>
+            <p class="muted form-note">
+              Tip: Update the EmailJS keys inside script.js to enable direct form submissions.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Mahipal Singh</h3>
+          <p>Computer Science Student and Software Developer.</p>
+          <p class="muted">Built with HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/mpsinghmandawariya" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/mahipal-singh-deora-8703a9313/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://x.com/" target="_blank" rel="noreferrer">X</a>
+          <a href="mailto:mmahipalsingh717@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mahipal Singh. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <dialog class="preview-modal" id="preview-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="preview-title">Certificate Preview</h3>
+          <button class="icon-btn" id="preview-close" type="button">Close</button>
+        </div>
+        <img id="preview-image" src="" alt="Certificate preview" />
+      </div>
+    </dialog>
+  </body>
+</html>
